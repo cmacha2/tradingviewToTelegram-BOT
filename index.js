@@ -6,9 +6,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Token del Bot de Telegram
-const telegramToken = '6947107611:AAGPtEStGeVmu8rje_gCLC60zZ-0va7BzsE';
+const telegramToken = process.env.TELEGRAM_TOKEN
 // ID del Canal de Telegram (puede empezar con @)
-const telegramChannel = '-1002049356357';
+const telegramChannel = process.env.TELEGRAM_CHANNEL_ID
 
 app.use(bodyParser.json());
 
